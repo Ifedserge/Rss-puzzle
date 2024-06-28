@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "allowPattern":  "^feat\\/RSS-PZ-\\d+_.*$"
+    }
+}

@@ -1,0 +1,132 @@
+.game {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+}
+.card {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+.card {
+    /* min-width: 30px;
+    max-width: 300px; */
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+.card {
+    font-size: calc((10px + 1vmin));
+}
+.card:hover {
+    background-color: rgb(191, 191, 191);
+}
+.block__results {
+    max-width: 802px;
+    min-height: 590px;
+    width: 100%;
+    border: 1px solid black;
+}
+.result {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+/* .result .card{
+    border: none;
+} */
+.block__cards {
+    max-width: 800px;
+    width: 100%;
+    min-height: 60px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.continue__btn,
+.check__btn,
+.complate{
+    margin: 20px 0;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.continue__btn:hover,
+.check__btn:hover,
+.complate:hover {
+    background-color: rgb(191, 191, 191);
+}
+.bad {
+    background-color: rgb(255, 181, 181);
+}
+
+.translate__block {
+    max-width: 600px;
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.translate, .audio__btn {
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(195, 255, 195, 0.3);
+}
+.translate:hover,
+.audio__btn {
+    background-color: rgba(144, 179, 144, 0.3);
+}
+.content {
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .block__results {
+        min-height: 350px;
+    }
+    .card {
+        margin: 2px 0;
+        padding: 2px;
+    }
+    .result,
+    .block__cards {
+        min-height: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .block__results,
+    .block__cards {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block__results,
+    .block__cards {
+        max-width: 650px;
+    }
+}
